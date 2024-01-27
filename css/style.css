@@ -17,7 +17,7 @@ body    {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg);
     color: #fff;
-    min-height: 5000px;
+    /* min-height: 5000px; */
 
 }
 
@@ -271,6 +271,60 @@ body    {
     color: #eee;
 }
 
+.contact .row form .btn {
+    margin-top: 3rem;
+    display: inline;
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    background-color: var(--primary);
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* footer section */
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    
+}
+
+footer .socials {
+    padding: 1rem 0;
+}
+
+footer .socials a {
+color: #fff;
+margin: 1rem;
+}
+
+footer .socials a:hover,
+footer .links a:hover {
+    color: var(--bg);
+}
+
+footer .links {
+    margin-bottom: 1.2rem;
+}
+
+footer .links a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+}
+
+footer .credit a {
+    color: var(--bg);
+    font-weight: 700;
+}
+
 /* media queries */
 
 /* Laptop */
@@ -346,6 +400,18 @@ body    {
 
     .menu p {
         font-size: 1.2rem;
+    }
+
+    .contact .row {
+        flex-wrap: wrap;
+    }
+
+    .contact .row .map {
+        height: 30rem;
+    }
+
+    .contact .row form {
+        padding-top: 0;
     }
 }
 /* Mobile Phone */
