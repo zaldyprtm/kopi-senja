@@ -80,8 +80,9 @@
 // Toggle class active untuk hamburger menu
 const navbarNav = document.querySelector('.navbar-nav');
 // ketika hamburger menu di klik
-document.querySelector('#hamburger-menu').onclick = () => {
+document.querySelector('#hamburger-menu').onclick = (e) => {
   navbarNav.classList.toggle('active');
+  e.preventDefault();
 };
 
 // Toggle class active untuk search form
@@ -109,14 +110,17 @@ const sc = document.querySelector('#shopping-cart-button');
 document.addEventListener('click', function (e) {
   if (!hm.contains(e.target) && !navbarNav.contains(e.target)) {
     navbarNav.classList.remove('active');
+   
   }
 
   if (!sb.contains(e.target) && !searchForm.contains(e.target)) {
     searchForm.classList.remove('active');
+    
   }
 
   if (!sc.contains(e.target) && !shoppingCart.contains(e.target)) {
     shoppingCart.classList.remove('active');
+    
   }
 });
 
